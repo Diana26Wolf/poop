@@ -1,0 +1,51 @@
+body
+{
+  color: white;
+  background: linear-gradient(white, black);
+}
+.heading{
+  color: black;
+  background-color: rgb(169, 199, 255);
+  padding: 10px;
+  width: fit-content;
+  border-color: black;
+  border-width: 4px;
+  border-style: solid;
+  letter-spacing: 5px;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+#btn1{
+background-color: rgb(20, 104, 201);
+font-size: 21px;
+}
+#btn2{
+  background-color: rgb(20, 201, 59);
+  font-size: 21px;
+  }
+  label{
+    font-size: 21px;
+  }
+#e1, #e2{
+  color:grey;
+}

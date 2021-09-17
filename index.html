@@ -1,0 +1,67 @@
+<html>
+
+  <head>
+    <title>Hand Gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+ 
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+ 
+  <body>
+    <div class="container">
+ 
+      <center>
+        <h1 class="heading">Hand Gestures<br>
+          <span>&#128072;</span>
+          <span>&#128076;</span>
+          <span>&#128071;</span>
+        </h1>
+        <br><br>
+ 
+        <p style="font-size: 22px; color: black;">Take the picture of a hand gesture to generate an emoji
+          <br>
+          <b style="color: yellow">Left</b>
+          <br>
+          <b style="color: black">Good</b>
+          <br>
+          <b style="color: red">Down</b>
+          <br>
+        </p>
+        <div class="col-lg-4 col-md-4 main_box" style="background-color: rgb(138, 138, 255);"><br>
+          <label>Webcam View</label>
+          <br>
+          <div id="camera"></div>
+          <br>
+          <button id="btn1" onclick="capture()">Capture</button>
+        </div>
+        <div class="col-lg-4 col-md-4 main_box" style="background-color: rgb(255, 255, 129);"><br>
+          <label style="color: black;">Prediction</label><br>
+          <h2 id="emoji1"></h2>
+          <h2 id="e1"></h2>
+          <hr>
+          <h2 id="emoji2"></h2>
+          <h2 id="e2"></h2>
+        </div>
+        <div class="col-lg-4 col-md-4 main_box" style="background-color: rgb(128, 251, 128);"><br>
+          <label>Captured Image</label>
+          <br>
+          <div id="result"></div>
+          <br>
+          <button id="btn2" onclick="compare()">Identify</button>
+        </div>
+ 
+      </center>
+ 
+    </div>
+ 
+    <script src="script.js"></script>
+ 
+  </body>
+ 
+  </html>
